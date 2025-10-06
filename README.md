@@ -11,9 +11,9 @@
 |-----------------------|--------|
 | Java                  | 11     |
 | JUnit                 | 4.13.2 |
-| Mockito               | 5.17.0 |
+| Mockito               | 5.19.0 |
 | Maven Compiler Plugin | 3.8.1  |
-| JaCoCo                | 0.8.12 |
+| JaCoCo                | 0.8.13 |
 
 ## Запуск теста
 mvn clean test

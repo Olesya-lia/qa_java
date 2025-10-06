@@ -16,20 +16,22 @@ public class LionTest {
 
     @Mock
     private Feline feline;
+
     private Lion lion;
 
 
     @Before
     public void setLion() throws Exception{
-        lion = new Lion("Самец", feline);
+       lion = new Lion("Самец", feline);
     }
 
     @Test
-    public void exceptionLionSexTest() {
+    public void haveManeThrowsExceptionTest() {
         try {
-            lion = new Lion("Самец", feline);
+          new Lion("Некорректный пол", feline);
         } catch (Exception exception){
-            assertEquals("Используйте допустимые значения пола животного - самец или самка", exception.getMessage());
+            String expected = "Используйте допустимые значения пола животного - Cамец или Cамка";
+            assertEquals(expected, exception.getMessage());
         }
     }
 
