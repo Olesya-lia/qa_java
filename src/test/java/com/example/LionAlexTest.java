@@ -21,7 +21,7 @@ public class LionAlexTest {
 
     @Before
     public void serUp() throws Exception{
-        lionAlex = new LionAlex("Самец",feline);
+        lionAlex = new LionAlex(feline);
     }
 
     @Test
